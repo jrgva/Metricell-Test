@@ -6,10 +6,10 @@ using System.Collections.Generic;
 namespace InterviewTest.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api")]
     public class EmployeesController : ControllerBase
     {
-        [HttpGet]
+        [HttpGet("notUsed")]
         public List<Employee> Get()
         {
             var employees = new List<Employee>();

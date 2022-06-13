@@ -1,3 +1,9 @@
+using InterviewTest.Helper;
+using InterviewTest.Helper.Interfaces;
+using InterviewTest.Repository;
+using InterviewTest.Repository.Interfaces;
+using InterviewTest.Service;
+using InterviewTest.Service.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
@@ -22,6 +28,10 @@ namespace InterviewTest
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            services.AddSingleton<ISqlLiteHandler, SqlLiteHandler>();
+            services.AddSingleton<IEmployeeRepository, EmployeeRepository>();
+            services.AddSingleton<IEmployeeService, EmployeeService>();
 
             // In production, the React files will be served from this directory
             services.AddSpaStaticFiles(configuration =>

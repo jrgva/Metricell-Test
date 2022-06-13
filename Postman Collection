@@ -1,0 +1,223 @@
+{
+	"info": {
+		"_postman_id": "c48404d8-3a18-4946-a330-9327c821bdb2",
+		"name": "Metricell-Test Requests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "editEmployee",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Abul2\",\r\n    \"value\":\"9999\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:41478/api/editEmployee?name=Abul&value=1357",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "41478",
+					"path": [
+						"api",
+						"editEmployee"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Abul"
+						},
+						{
+							"key": "value",
+							"value": "1357"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addEmployee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Abul2\",\r\n    \"value\":\"9999\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:41478/api/addEmployee?name=Antonio&value=135734",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "41478",
+					"path": [
+						"api",
+						"addEmployee"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Antonio"
+						},
+						{
+							"key": "value",
+							"value": "135734"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteEmployee",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Abul2\",\r\n    \"value\":\"9999\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:41478/api/deleteEmployee?name=Antonio&value=135734",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "41478",
+					"path": [
+						"api",
+						"deleteEmployee"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Antonio"
+						},
+						{
+							"key": "value",
+							"value": "135734"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listAllEmployees",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:41478/api/listAllEmployees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "41478",
+					"path": [
+						"api",
+						"listAllEmployees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "incrementValueBasedOnName",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:41478/api/incrementValueBasedOnName",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "41478",
+					"path": [
+						"api",
+						"incrementValueBasedOnName"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sumValuesBasedOnName",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:41478/api/sumValuesBasedOnInitialLetter/C",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "41478",
+					"path": [
+						"api",
+						"sumValuesBasedOnInitialLetter",
+						"C"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
